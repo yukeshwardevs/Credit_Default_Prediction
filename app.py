@@ -23,8 +23,8 @@ def predict():
         data_row_1.append(feature_value_row_1)
         data_row_2.append(feature_value_row_2)
 
-    # Prepare data payload for API
-    payload = {
+    # Prepare data InputData for API
+    InputData = {
         "input_data": {
             "columns": list(range(23)),
             "index": [0, 1],
@@ -37,7 +37,7 @@ def predict():
 
     try:
         # Make request to Azure endpoint
-        response = requests.post(url=Endpoint, json=payload, headers=headers)
+        response = requests.post(url=Endpoint, json=InputData, headers=headers)
         print("Response content:", response.content)  # Print response content for debugging
 
         # Process prediction result
