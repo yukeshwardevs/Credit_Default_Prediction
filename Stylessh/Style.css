@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+h2, h3 {
+    color: #333;
+}
+form {
+    margin-bottom: 20px;
+}
+label {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 5px;
+}
+input[type="number"] {
+    width: 150px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.result, .error {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+.error {
+    color: red;
+    border-color: red;
+}
